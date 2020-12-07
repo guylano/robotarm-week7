@@ -17,10 +17,14 @@
             color=robotArm.scan();
             while(color == 'red'){
                   
-                     for (var i = 1; i <=8 ; i++){ robotArm.moveRight();}
+                     for (var i = 1; i <=8 ; i++){ 
+                        robotArm.moveRight();
+                    }
            
                      robotArm.drop();
-                     for (var i = 1; i <=8 ; i++){robotArm.moveLeft();}
+                     for (var i = 1; i <=8 ; i++){
+                        robotArm.moveLeft();
+                    }
                       robotArm.grab();
                     color=robotArm.scan();
             }
